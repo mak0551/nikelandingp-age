@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 2px solid red; */
+}
+html,body{
+    /* height: 100%; */
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    /* border: 5PX solid red; */
+    background-color: #d0d4d5;
+}
+.img{
+    height: 30px;
+    
+    mix-blend-mode: color-burn;
+    color: #d0d4d5;
+    background-color: #d0d4d5;
+}
+#nav{
+    /* border: 2px solid rebeccapurple; */
+    height: 110px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+}
+#nav::-webkit-scrollbar{
+    display: none;
+}
+#nav1{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+#nav2{
+    /* border: 2px solid yellow; */
+    height: 100%;
+    width: 135px;
+    margin-right: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+#nike{
+    height: 70px;
+    width: 135px;
+    margin-right: 100px;
+    margin-left: 30px;
+}
+#nav1 h4{
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#hero{
+    height:calc(100% - 110px);
+    width: 100%;
+    display: flex;
+}
+#heroleft{
+    height: 100%;
+    width: 40%;
+    padding: 0 68px;
+}
+
+#heroleft h5{
+    margin-top: 80px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+#heroleft h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 62px;
+    text-transform: uppercase;
+    margin-bottom:40px;
+}
+#heroleft p{
+    font-size: 13px;
+    margin-bottom: 70px;
+}
+#heroleft button{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-top-left-radius: 0%;
+}
+#heroright{
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    padding: 130px;
+    white-space: nowrap;/* ene line me jitne bhi children hai unlo ku ek hi line me kardega zabardasti*/
+    overflow-x: auto;/*scrollbar sirf right me aata*/
+
+}
+#heroright::-webkit-scrollbar{
+    display: none;/*scrollbar ghayab hojata*/
+}
+
+.elem{
+    height: 380px;
+    width: 260px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3 );/* x axis y axis blur rbg */
+    display: inline-block;
+    margin-right: 10px;
+}
+.elem img{
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    top: 10%;
+    object-fit: cover;
+}
+.elem h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #d0d4d5;
+    padding: 10px 13px;
+}
+.elem h5{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding: 10px 13px;
+}
+.elem button{
+    position: absolute;
+    bottom: 18%;
+    right: 0;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding: 10px 13px;
+    border: none;
+    outline: none;
+}
+.footer{
+    height: auto;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+.footer1{
+    height: 80%;
+    background-color: #686b6bb4;
+    color: #fff;
+    display: flex;   
+    flex-direction: row;
+    /* overflow: hidden;
+    overflow-x: auto; */
+    padding-top: 10px;
+}
+.footer1_1{
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.footer1_1::-webkit-scrollbar{
+    display: none;
+}
+.footer1_1 span{
+    width: 25%;
+    min-width: 100px;
+}
+.footer1_1 span h4{
+    padding: 0 10px;
+    color: #ccc7c7;
+}
+.footer1_1 span ul li{
+    list-style-type: none;
+    padding:0 10px ;
+}
+.footer1_2{
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.footer1_2::-webkit-scrollbar{
+    display: none;
+}
+.footer1_2 span{
+    width: 50%;
+    min-width: 200px;
+}
+.footer2{
+    height: 20%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #fff;
+    background-color:  #686b6bb4;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.footer2::-webkit-scrollbar{
+    display: none;
+}
+.footer1_2 span h4{
+    padding: 0 10px;
+    color: #ccc7c7;
+}
+.footer1_2 span p{
+    font-size: large;
+    padding: 0 10px;
+}
+.footer2 span{
+    padding: 0 100px;
+    
+}
+@media screen and (max-width: 600px) {
+    #nav{
+        height: 50px;
+    }
+    .img{
+        height: 10px;
+        width: 15px;
+        mix-blend-mode: color-burn;
+        color: #d0d4d5;
+        background-color: #d0d4d5;
+    }
+    #nike{
+        height: 70px;
+        width: 100px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    #hero{
+        display: block;
+        height:auto;
+    
+    }
+    #heroleft{
+        width: 100%;
+        padding: 0 20px;
+    }
+    #heroleft h1{
+        width: 100%;
+        font-size: 28px;
+        overflow: auto;
+        margin-bottom: 20px;
+    }
+    #heroleft h5{
+        font-size: 15px;
+        overflow: auto;
+        margin-bottom: 20px;
+    }
+    #heroleft p{
+      margin-bottom: 30px;
+    }
+    #heroright{
+        width: 100%;
+        padding: 20px 20px;
+        /* background-color: aqua; */
+        
+    }
+    .elem{
+        overflow: hidden;
+    }
+    .footer{
+        display: none;
+    }
+}
+
